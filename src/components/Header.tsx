@@ -105,9 +105,9 @@ const Header: React.FC = () => {
               </button>
               <button
                 onClick={() => scrollToSection('booking')}
-                className=".bg-orange-500 text-orange-500 px-6 py-2 rounded-full hover:bg-orange-600 transition-colors duration-200 font-medium text-center"
+                className="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors duration-200 font-medium text-center"
               >
-                Hacer cita
+                Haz tu cita!
               </button>
             </nav>
           </div>
