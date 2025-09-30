@@ -25,31 +25,31 @@ const Header: React.FC = () => {
               onClick={() => scrollToSection('home')}
               className="text-gray-700 hover:text-orange-500 transition-colors duration-200 font-medium"
             >
-              Home
+              Inicio
             </button>
             <button
               onClick={() => scrollToSection('about')}
               className="text-gray-700 hover:text-orange-500 transition-colors duration-200 font-medium"
             >
-              About
+              Sobre nosotros
             </button>
             <button
               onClick={() => scrollToSection('services')}
               className="text-gray-700 hover:text-orange-500 transition-colors duration-200 font-medium"
             >
-              Services
+              Servicios
             </button>
             <button
               onClick={() => scrollToSection('booking')}
               className="text-gray-700 hover:text-orange-500 transition-colors duration-200 font-medium"
             >
-              Book Appointment
+              Hacer cita
             </button>
             <button
               onClick={() => scrollToSection('contact')}
               className="text-gray-700 hover:text-orange-500 transition-colors duration-200 font-medium"
             >
-              Contact
+              Contactos
             </button>
           </nav>
 
@@ -57,7 +57,7 @@ const Header: React.FC = () => {
             onClick={() => scrollToSection('booking')}
             className="hidden md:inline-flex bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors duration-200 font-medium"
           >
-            Book Now
+            Haz tu cita!
           </button>
 
           {/* Mobile Menu Button */}
@@ -77,37 +77,37 @@ const Header: React.FC = () => {
                 onClick={() => scrollToSection('home')}
                 className="text-left text-gray-700 hover:text-orange-500 transition-colors duration-200 font-medium"
               >
-                Home
+                Inicio
               </button>
               <button
                 onClick={() => scrollToSection('about')}
                 className="text-left text-gray-700 hover:text-orange-500 transition-colors duration-200 font-medium"
               >
-                About
+                Sobre nosotros
               </button>
               <button
                 onClick={() => scrollToSection('services')}
                 className="text-left text-gray-700 hover:text-orange-500 transition-colors duration-200 font-medium"
               >
-                Services
+                Servicios
               </button>
               <button
                 onClick={() => scrollToSection('booking')}
                 className="text-left text-gray-700 hover:text-orange-500 transition-colors duration-200 font-medium"
               >
-                Book Appointment
+                Hacer cita
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
                 className="text-left text-gray-700 hover:text-orange-500 transition-colors duration-200 font-medium"
               >
-                Contact
+                Contactos
               </button>
               <button
                 onClick={() => scrollToSection('booking')}
-                className=".bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors duration-200 font-medium text-center"
+                className=".bg-orange-500 text-orange-500 px-6 py-2 rounded-full hover:bg-orange-600 transition-colors duration-200 font-medium text-center"
               >
-                Book Now
+                Hacer cita
               </button>
             </nav>
           </div>
