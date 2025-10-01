@@ -5,39 +5,39 @@ const Services: React.FC = () => {
   const services = [
     {
       icon: Eye,
-      title: "Comprehensive Eye Exams",
-      description: "Thorough eye examinations using advanced diagnostic technology to assess vision, eye health, and detect potential issues early.",
-      features: ["Digital retinal imaging", "Pressure testing", "Visual field testing", "Color vision assessment"]
+      title: "Exámenes oftalmológicos completos",
+      description: "Exámenes oftalmológicos completos con tecnología de diagnóstico avanzada para evaluar la visión, la salud ocular y detectar posibles problemas de forma temprana.",
+      features: ["Imagen digital de retina", "Prueba de presión", "Prueba del campo visual", "Evaluación de la visión del color"]
     },
     {
       icon: Glasses,
-      title: "Eyewear Consultations",
-      description: "Expert guidance in selecting the perfect eyewear solution tailored to your lifestyle, preferences, and vision needs.",
-      features: ["Frame fitting", "Lens recommendations", "Style consultations", "Progressive lens fitting"]
+      title: "Consultas sobre gafas",
+      description: "Asesoría experta para seleccionar la solución de gafas perfecta, adaptada a su estilo de vida, preferencias y necesidades visuales.",
+      features: ["Adaptación de monturas", "Recomendaciones de lentes", "Consultas de estilo", "Adaptación de lentes progresivos"]
     },
     {
       icon: Search,
-      title: "Specialized Diagnostics",
-      description: "Advanced diagnostic services for complex eye conditions and comprehensive health screening.",
-      features: ["OCT imaging", "Corneal topography", "Diabetic eye screening", "Glaucoma testing"]
+      title: "Diagnóstico especializado",
+      description: "Servicios de diagnóstico avanzados para afecciones oculares complejas y evaluación integral de la salud.",
+      features: ["Imágenes OCT", "Topografía corneal", "Examen de diabetes ocular", "Prueba de glaucoma"]
     },
     {
       icon: Users,
-      title: "Family Eye Care",
-      description: "Complete eye care services for patients of all ages, from children to seniors, with age-appropriate care.",
-      features: ["Pediatric exams", "School vision screenings", "Senior eye care", "Contact lens fittings"]
+      title: "Atención oftalmológica familiar",
+      description: "Servicios completos de atención oftalmológica para pacientes de todas las edades, desde niños hasta adultos mayores, con atención adaptada a su edad.",
+      features: ["Exámenes pediátricos", "Exámenes de la vista escolares", "Atención oftalmológica para adultos mayores", "Adaptación de lentes de contacto"]
     },
     {
       icon: Shield,
-      title: "Eye Health Management",
-      description: "Ongoing care and management for various eye conditions to maintain optimal eye health over time.",
-      features: ["Dry eye treatment", "Disease monitoring", "Post-surgical care", "Preventive care plans"]
+      title: "Gestión de la salud ocular",
+      description: "Atención y gestión continua de diversas afecciones oculares para mantener una salud ocular óptima a lo largo del tiempo.",
+      features: ["Tratamiento del ojo seco", "Monitoreo de enfermedades", "Atención posquirúrgica", "Planes de atención preventiva"]
     },
     {
       icon: Zap,
-      title: "Emergency Eye Care",
-      description: "Prompt attention for urgent eye issues and injuries to protect your vision and provide immediate relief.",
-      features: ["Foreign object removal", "Eye injury assessment", "Infection treatment", "Same-day appointments"]
+      title: "Emergencias Cuidado de la vista",
+      description: "Atención inmediata para problemas y lesiones oculares urgentes para proteger su visión y brindar alivio inmediato.",
+      features: ["Extracción de objetos extraños", "Evaluación de lesiones oculares", "Tratamiento de infecciones", "Citas el mismo día"]
     }
   ];
 
@@ -45,10 +45,10 @@ const Services: React.FC = () => {
     <section id="services" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Services</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">Nuestros Servicios</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Comprehensive eye care services designed to protect, enhance, and maintain your vision 
-            throughout every stage of life. We use the latest technology to deliver exceptional results.
+            Servicios integrales de cuidado ocular diseñados para proteger, mejorar y mantener su visión en cada etapa de su vida.
+            Utilizamos la última tecnología para ofrecer resultados excepcionales.
           </p>
         </div>
 
@@ -58,8 +58,8 @@ const Services: React.FC = () => {
               key={index}
               className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
             >
-              <div className="bg-sky-100 p-4 rounded-xl w-16 h-16 flex items-center justify-center mb-6">
-                <service.icon className="h-8 w-8 text-sky-500" />
+              <div className="bg-orange-100 p-4 rounded-xl w-16 h-16 flex items-center justify-center mb-6">
+                <service.icon className="h-8 w-8 text-orange-500" />
               </div>
               
               <h3 className="text-xl font-bold text-gray-900 mb-4">{service.title}</h3>
@@ -68,7 +68,7 @@ const Services: React.FC = () => {
               <ul className="space-y-2">
                 {service.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center text-sm text-gray-600">
-                    <div className="w-2 h-2 bg-sky-500 rounded-full mr-3"></div>
+                    <div className="w-2 h-2 .bg-orange-500 rounded-full mr-3"></div>
                     {feature}
                   </li>
                 ))}
@@ -76,9 +76,9 @@ const Services: React.FC = () => {
               
               <button
                 onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
-                className="mt-6 w-full bg-sky-500 text-white py-3 px-6 rounded-full hover:bg-sky-600 transition-colors duration-200 font-medium"
+                className="mt-6 w-full .bg-orange-500 text-white py-3 px-6 rounded-full hover:bg-orange-600 transition-colors duration-200 font-medium"
               >
-                Book Consultation
+                Agenda tu consulta!
               </button>
             </div>
           ))}
