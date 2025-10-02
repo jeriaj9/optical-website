@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
               <Eye className="h-8 w-8 text-orange-400" />
-              <span className="text-2xl font-bold">VisionCare</span>
+              <span className="text-2xl font-bold">Óptica Soberana</span>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Servicios profesionales de cuidado ocular con más de 15 años de experiencia. Su visión es nuestra prioridad.
@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center text-gray-300">
                 <Mail className="h-4 w-4 mr-3 text-orange-400" />
-                <span className="text-sm">info@visioncare.com</span>
+                <span className="text-sm">info@opticasoberana.com</span>
               </div>
             </div>
           </div>
@@ -114,7 +114,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 pt-8 mt-12">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 VisionCare. Reservados todos los derechos.
+              © 2025 Óptica Soberana. Reservados todos los derechos.
             </p>
             <div className="flex space-x-6">
               <a href="#" className="text-gray-400 hover:text-orange-400 text-sm transition-colors duration-200">

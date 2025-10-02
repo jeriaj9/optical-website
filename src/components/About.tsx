@@ -29,9 +29,9 @@ const About: React.FC = () => {
     <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">Sobre VisionCare</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">Sobre Óptica Soberana</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Durante más de 15 años, VisionCare ha sido la opción de confianza para el cuidado integral de la vista en nuestra comunidad.
+            Durante más de 15 años, Óptica Soberana ha sido la opción de confianza para el cuidado integral de la vista en nuestra comunidad.
             Combinamos tecnología de vanguardia con atención compasiva para proteger y mejorar su visión en cada etapa de su vida.
           </p>
         </div>

@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
     {
       icon: Mail,
       title: "Envíenos un correo electrónico",
-      details: ["appointments@visioncare.com", "info@visioncare.com", "emergency@visioncare.com"],
+      details: ["appointments@opticasoberana.com", "info@opticasoberana.com", "emergency@opticasoberana.com"],
       action: "Enviar correo electrónico"
     }
   ];

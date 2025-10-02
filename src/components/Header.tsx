@@ -16,7 +16,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-2">
             <Eye className="h-8 w-8 text-orange-500" />
-            <span className="text-2xl font-bold text-gray-900">VisionCare</span>
+            <span className="text-2xl font-bold text-gray-900">Óptica Soberana</span>
           </div>
 
           {/* Desktop Navigation */}

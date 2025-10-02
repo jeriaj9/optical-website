@@ -7,7 +7,7 @@ const Testimonials: React.FC = () => {
     name: "Sarah Johnson",
     location: "Centro",
     rating: 5,
-    text: "Atención excepcional de principio a fin. El equipo de VisionCare hizo que mi examen ocular fuera cómodo y completo. El Dr. Smith explicó todo claramente y me ayudó a encontrar las gafas perfectas para mi estilo de vida.",
+    text: "Atención excepcional de principio a fin. El equipo de Óptica Soberana hizo que mi examen ocular fuera cómodo y completo. El Dr. Smith explicó todo claramente y me ayudó a encontrar las gafas perfectas para mi estilo de vida.",
     service: "Examen ocular integral"
   },
   {
@@ -54,7 +54,7 @@ const Testimonials: React.FC = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-6">Lo que dicen nuestros pacientes</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             No se fíe solo de nuestras palabras.
-            Esto es lo que nuestros pacientes opinan sobre su experiencia en VisionCare.
+            Esto es lo que nuestros pacientes opinan sobre su experiencia en Óptica Soberana.
           </p>
         </div>
 

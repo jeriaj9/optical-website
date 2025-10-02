@@ -86,7 +86,7 @@ const Booking: React.FC = () => {
             <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-6" />
             <h2 className="text-3xl font-bold text-gray-900 mb-4">¡Cita confirmada!</h2>
             <p className="text-xl text-gray-600 mb-6">
-              Gracias por reservar con VisionCare. Le hemos enviado un correo electrónico de confirmación con todos los detalles.
+              Gracias por reservar con Óptica Soberana. Le hemos enviado un correo electrónico de confirmación con todos los detalles.
             </p>
             <div className="bg-white p-6 rounded-xl shadow-sm mb-8">
               <h3 className="font-semibold text-gray-900 mb-4">Detalles de la cita:</h3>
