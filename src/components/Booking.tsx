@@ -28,12 +28,12 @@ const Booking: React.FC = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const services = [
-    'Comprehensive Eye Exam',
-    'Contact Lens Fitting',
-    'Eyewear Consultation',
-    'Pediatric Eye Exam',
-    'Emergency Eye Care',
-    'Follow-up Appointment'
+    'Examen oftalmológico completo',
+    'Adaptación de lentes de contacto',
+    'Consulta sobre gafas',
+    'Examen oftalmológico pediátrico',
+    'Atención oftalmológica de urgencia',
+    'Cita de seguimiento'
   ];
 
   const timeSlots = [
@@ -59,7 +59,7 @@ const Booking: React.FC = () => {
     // Here you would integrate with Google Calendar API
     // For now, we'll just show a success message
     console.log('Appointment booking:', formData);
-    
+
     setIsSubmitting(false);
     setIsSubmitted(true);
   };
@@ -84,29 +84,28 @@ const Booking: React.FC = () => {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center bg-green-50 p-12 rounded-2xl border border-green-200">
             <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-6" />
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Appointment Confirmed!</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">¡Cita confirmada!</h2>
             <p className="text-xl text-gray-600 mb-6">
-              Thank you for booking with VisionCare. We've sent a confirmation email with all the details.
+              Gracias por reservar con VisionCare. Le hemos enviado un correo electrónico de confirmación con todos los detalles.
             </p>
             <div className="bg-white p-6 rounded-xl shadow-sm mb-8">
-              <h3 className="font-semibold text-gray-900 mb-4">Appointment Details:</h3>
+              <h3 className="font-semibold text-gray-900 mb-4">Detalles de la cita:</h3>
               <div className="grid md:grid-cols-2 gap-4 text-sm">
-                <div><strong>Date:</strong> {formData.date}</div>
-                <div><strong>Time:</strong> {formData.time}</div>
-                <div><strong>Service:</strong> {formData.service}</div>
-                <div><strong>Patient:</strong> {formData.firstName} {formData.lastName}</div>
+                <div><strong>Fecha:</strong> {formData.date}</div>
+                <div><strong>Hora:</strong> {formData.time}</div>
+                <div><strong>Servicio:</strong> {formData.service}</div>
+                <div><strong>Paciente:</strong> {formData.firstName} {formData.lastName}</div>
               </div>
             </div>
             <div className="space-y-4">
               <p className="text-gray-600">
-                Please arrive 15 minutes early for your appointment. If you need to reschedule, 
-                please call us at (555) 123-4567.
+                Por favor, llegue 15 minutos antes de su cita. Si necesita reprogramarla, llámenos al (555) 123-4567.
               </p>
               <button
                 onClick={resetForm}
-                className="bg-sky-500 text-white px-8 py-3 rounded-full hover:bg-sky-600 transition-colors duration-200 font-medium"
+                className="bg-orange-500 text-white px-8 py-3 rounded-full hover:bg-orange-600 transition-colors duration-200 font-medium"
               >
-                Book Another Appointment
+                Reservar otra cita
               </button>
             </div>
           </div>
@@ -119,10 +118,10 @@ const Booking: React.FC = () => {
     <section id="booking" className="py-20 bg-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">Book Your Appointment</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">Reserve su cita</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Schedule your eye exam or consultation online. Choose your preferred date and time, 
-            and we'll confirm your appointment within 24 hours.
+            Programe su examen de la vista o consulta en línea.
+            Elija la fecha y hora que prefiera y confirmaremos su cita en 24 horas.
           </p>
         </div>
 
@@ -133,7 +132,7 @@ const Booking: React.FC = () => {
               <div>
                 <label htmlFor="firstName" className="flex items-center text-sm font-medium text-gray-700 mb-2">
                   <User className="h-4 w-4 mr-2" />
-                  First Name *
+                  Nombre *
                 </label>
                 <input
                   type="text"
@@ -142,13 +141,13 @@ const Booking: React.FC = () => {
                   required
                   value={formData.firstName}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-colors duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors duration-200"
                 />
               </div>
               <div>
                 <label htmlFor="lastName" className="flex items-center text-sm font-medium text-gray-700 mb-2">
                   <User className="h-4 w-4 mr-2" />
-                  Last Name *
+                  Apellido *
                 </label>
                 <input
                   type="text"
@@ -157,7 +156,7 @@ const Booking: React.FC = () => {
                   required
                   value={formData.lastName}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-colors duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors duration-200"
                 />
               </div>
             </div>
@@ -166,7 +165,7 @@ const Booking: React.FC = () => {
               <div>
                 <label htmlFor="email" className="flex items-center text-sm font-medium text-gray-700 mb-2">
                   <Mail className="h-4 w-4 mr-2" />
-                  Email Address *
+                  Correo electrónico *
                 </label>
                 <input
                   type="email"
@@ -175,13 +174,13 @@ const Booking: React.FC = () => {
                   required
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-colors duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors duration-200"
                 />
               </div>
               <div>
                 <label htmlFor="phone" className="flex items-center text-sm font-medium text-gray-700 mb-2">
                   <Phone className="h-4 w-4 mr-2" />
-                  Phone Number *
+                  Número de teléfono *
                 </label>
                 <input
                   type="tel"
@@ -190,7 +189,7 @@ const Booking: React.FC = () => {
                   required
                   value={formData.phone}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-colors duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors duration-200"
                 />
               </div>
             </div>
@@ -200,7 +199,7 @@ const Booking: React.FC = () => {
               <div>
                 <label htmlFor="date" className="flex items-center text-sm font-medium text-gray-700 mb-2">
                   <Calendar className="h-4 w-4 mr-2" />
-                  Preferred Date *
+                  Fecha preferida *
                 </label>
                 <input
                   type="date"
@@ -210,13 +209,13 @@ const Booking: React.FC = () => {
                   min={new Date().toISOString().split('T')[0]}
                   value={formData.date}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-colors duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors duration-200"
                 />
               </div>
               <div>
                 <label htmlFor="time" className="flex items-center text-sm font-medium text-gray-700 mb-2">
                   <Clock className="h-4 w-4 mr-2" />
-                  Preferred Time *
+                  Hora preferida *
                 </label>
                 <select
                   id="time"
@@ -224,9 +223,9 @@ const Booking: React.FC = () => {
                   required
                   value={formData.time}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-colors duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors duration-200"
                 >
-                  <option value="">Select Time</option>
+                  <option value="">Seleccionar hora</option>
                   {timeSlots.map(time => (
                     <option key={time} value={time}>{time}</option>
                   ))}
@@ -234,7 +233,7 @@ const Booking: React.FC = () => {
               </div>
               <div>
                 <label htmlFor="service" className="flex items-center text-sm font-medium text-gray-700 mb-2">
-                  Service Type *
+                  Tipo de servicio *
                 </label>
                 <select
                   id="service"
@@ -242,9 +241,9 @@ const Booking: React.FC = () => {
                   required
                   value={formData.service}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-colors duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors duration-200"
                 >
-                  <option value="">Select Service</option>
+                  <option value="">Seleccionar servicio</option>
                   {services.map(service => (
                     <option key={service} value={service}>{service}</option>
                   ))}
@@ -255,7 +254,7 @@ const Booking: React.FC = () => {
             <div>
               <label htmlFor="notes" className="flex items-center text-sm font-medium text-gray-700 mb-2">
                 <MessageSquare className="h-4 w-4 mr-2" />
-                Additional Notes (Optional)
+                Notas adicionales (Opcional)
               </label>
               <textarea
                 id="notes"
@@ -263,8 +262,8 @@ const Booking: React.FC = () => {
                 rows={4}
                 value={formData.notes}
                 onChange={handleInputChange}
-                placeholder="Please let us know if you have any specific concerns or if this is a follow-up appointment..."
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-colors duration-200 resize-none"
+                placeholder="Por favor, háganos saber si tiene alguna inquietud específica o si se trata de una cita de seguimiento..."
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors duration-200 resize-none"
               />
             </div>
 
@@ -272,12 +271,12 @@ const Booking: React.FC = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="bg-sky-500 text-white px-12 py-4 rounded-full text-lg font-semibold hover:bg-sky-600 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 transform hover:scale-105"
+                className="bg-orange-500 text-white px-12 py-4 rounded-full text-lg font-semibold hover:bg-orange-600 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 transform hover:scale-105"
               >
-                {isSubmitting ? 'Booking Appointment...' : 'Book Appointment'}
+                {isSubmitting ? 'Reservando cita...' : 'Reservar cita'}
               </button>
               <p className="text-sm text-gray-600 mt-4">
-                We'll confirm your appointment within 24 hours via email or phone.
+                Confirmaremos su cita dentro de las 24 horas por correo electrónico o teléfono.
               </p>
             </div>
           </form>

@@ -1246,6 +1246,11 @@ video {
     --tw-ring-color: rgb(14 165 233 / var(--tw-ring-opacity, 1))
 }
 
+.focus\:ring-orange-500:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgb(249 115 22 / var(--tw-text-opacity, 1))
+}
+
 .disabled\:cursor-not-allowed:disabled {
     cursor: not-allowed
 }
