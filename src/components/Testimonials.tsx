@@ -2,59 +2,59 @@ import React from 'react';
 import { Star, Quote } from 'lucide-react';
 
 const Testimonials: React.FC = () => {
-  const testimonials = [
-    {
-      name: "Sarah Johnson",
-      location: "Downtown",
-      rating: 5,
-      text: "Exceptional care from start to finish. The team at VisionCare made my eye exam comfortable and thorough. Dr. Smith explained everything clearly and helped me find the perfect glasses for my lifestyle.",
-      service: "Comprehensive Eye Exam"
-    },
-    {
-      name: "Michael Chen",
-      location: "Midtown",
-      rating: 5,
-      text: "I've been coming here for years, and the service just keeps getting better. The new digital equipment is impressive, and the staff always remembers my preferences. Highly recommend!",
-      service: "Contact Lens Fitting"
-    },
-    {
-      name: "Emily Rodriguez",
-      location: "Westside",
-      rating: 5,
-      text: "My daughter had her first eye exam here, and the pediatric specialist was amazing with her. They made the whole experience fun and stress-free. We'll definitely be back!",
-      service: "Pediatric Eye Care"
-    },
-    {
-      name: "James Wilson",
-      location: "East End",
-      rating: 5,
-      text: "Quick, professional service when I had an eye emergency. They fit me in same day and took excellent care of the problem. The follow-up care was outstanding too.",
-      service: "Emergency Eye Care"
-    },
-    {
-      name: "Lisa Thompson",
-      location: "Northside",
-      rating: 5,
-      text: "The eyewear consultation was incredibly helpful. They have a great selection, and the optician helped me find frames that look great and fit perfectly. Love my new glasses!",
-      service: "Eyewear Consultation"
-    },
-    {
-      name: "David Park",
-      location: "Southside",
-      rating: 5,
-      text: "Professional, knowledgeable, and caring. They detected an issue early that my previous doctor missed. I'm grateful for their thoroughness and expertise.",
-      service: "Comprehensive Eye Exam"
-    }
-  ];
+ const testimonials = [
+  {
+    name: "Sarah Johnson",
+    location: "Centro",
+    rating: 5,
+    text: "Atención excepcional de principio a fin. El equipo de VisionCare hizo que mi examen ocular fuera cómodo y completo. El Dr. Smith explicó todo claramente y me ayudó a encontrar las gafas perfectas para mi estilo de vida.",
+    service: "Examen ocular integral"
+  },
+  {
+    name: "Michael Chen",
+    location: "Zona Media",
+    rating: 5,
+    text: "He venido aquí durante años, y el servicio sigue mejorando. El nuevo equipo digital es impresionante y el personal siempre recuerda mis preferencias. ¡Muy recomendable!",
+    service: "Adaptación de lentes de contacto"
+  },
+  {
+    name: "Emily Rodriguez",
+    location: "Zona Oeste",
+    rating: 5,
+    text: "Mi hija tuvo su primer examen ocular aquí y el especialista pediátrico fue increíble con ella. Hicieron que toda la experiencia fuera divertida y sin estrés. ¡Definitivamente volveremos!",
+    service: "Atención ocular pediátrica"
+  },
+  {
+    name: "James Wilson",
+    location: "Extremo Este",
+    rating: 5,
+    text: "Servicio rápido y profesional cuando tuve una emergencia ocular. Me atendieron el mismo día y cuidaron el problema de manera excelente. El seguimiento también fue excepcional.",
+    service: "Atención ocular de emergencia"
+  },
+  {
+    name: "Lisa Thompson",
+    location: "Zona Norte",
+    rating: 5,
+    text: "La consulta de gafas fue increíblemente útil. Tienen una gran selección y el óptico me ayudó a encontrar monturas que se ven geniales y se ajustan perfectamente. ¡Me encantan mis nuevas gafas!",
+    service: "Consulta de gafas"
+  },
+  {
+    name: "David Park",
+    location: "Zona Sur",
+    rating: 5,
+    text: "Profesionales, conocedores y atentos. Detectaron un problema temprano que mi médico anterior pasó por alto. Estoy agradecido por su minuciosidad y experiencia.",
+    service: "Examen ocular integral"
+  }
+];
 
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">What Our Patients Say</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">Lo que dicen nuestros pacientes</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Don't just take our word for it. Here's what our patients have to say about 
-            their experience at VisionCare.
+            No se fíe solo de nuestras palabras.
+            Esto es lo que nuestros pacientes opinan sobre su experiencia en VisionCare.
           </p>
         </div>
 
@@ -94,17 +94,17 @@ const Testimonials: React.FC = () => {
                   <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
                 ))}
               </div>
-              <div className="text-sm text-gray-600">Average Rating</div>
+              <div className="text-sm text-gray-600">Calificación promedio</div>
             </div>
             <div className="w-px h-12 bg-gray-300"></div>
             <div className="text-center">
               <div className="text-3xl font-bold text-teal-500">500+</div>
-              <div className="text-sm text-gray-600">Reviews</div>
+              <div className="text-sm text-gray-600">Reseñas</div>
             </div>
             <div className="w-px h-12 bg-gray-300"></div>
             <div className="text-center">
               <div className="text-3xl font-bold text-orange-500">98%</div>
-              <div className="text-sm text-gray-600">Recommended</div>
+              <div className="text-sm text-gray-600">Recomendado</div>
             </div>
           </div>
         </div>
