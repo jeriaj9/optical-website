@@ -76,7 +76,7 @@ const Services: React.FC = () => {
               
               <button
                 onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
-                className="mt-6 w-full .bg-orange-500 text-white py-3 px-6 rounded-full hover:bg-orange-600 transition-colors duration-200 font-medium"
+                className="mt-6 w-full .bg-orange-500 border-2 border-orange-500 text-orange-500 py-3 px-6 rounded-full hover:bg-orange-600 hover:text-white transition-colors duration-200 font-medium"
               >
                 Agenda tu consulta!
               </button>
